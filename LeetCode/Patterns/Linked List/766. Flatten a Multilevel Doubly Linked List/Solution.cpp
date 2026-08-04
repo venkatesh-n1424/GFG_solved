@@ -23,12 +23,13 @@ public:
                 while(cur->next){
                     cur=cur->next;
                 }
-                t->prev=cur;
+                if(t){
                 cur->next=t;
+                t->prev=cur;
+                }
             }
-            else{
                 cur=cur->next;
-            }
+            
         }
         return head;
     }
