@@ -1,14 +1,18 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        //brute
+        vector<pair<int,int>> vals;
         int n=nums.size();
-        vector<int> res;
         for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(nums.at(i)+nums.at(j)==target) res = {i,j};
-            }
+            vals.emplace_back(nums[i],i);
         }
-        return res;
+        sort(vals.begin(),vals.end());
+        int i=0,j=n-1;
+        while(i<j){
+            if(vals[i].first+vals[j].first>target) j--;
+            else if(vals[i].first+vals[j].first<target) i++;
+            else return vector<int> {vals[i].second,vals[j].second};
+        }
+        return {};
     }
 };
