@@ -17,7 +17,7 @@ public:
         else{
             if(value>min_ele) st.push(value);
             else{
-                st.push((2*value)%mod-min_ele);
+                st.push((long)(2*value)%mod-min_ele);
                 min_ele=value;
             }
         }
