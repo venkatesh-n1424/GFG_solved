@@ -1,27 +1,43 @@
 class MinStack {
 public:
     //TC-O(1);
-    //SC-O(2*n);
-    stack<pair<int,int>> st;
+    //SC_O(N)
+    stack<int> st;
+    int min_ele=INT_MAX;
     MinStack() {
         
     }
     
     void push(int value) {
-        if(st.empty()) st.push({value,value});
-        else st.push({value,min(value,st.top().second)});
+        if(st.empty()){
+            min_ele=value;
+            st.push(value);
+        }
+        else{
+            if(value>min_ele) st.push(value);
+            else{
+                st.push(2*value-min_ele);
+                min_ele=value;
+            }
+        }
     }
     
     void pop() {
+        int n=st.top();
         st.pop();
+        if(n<min_ele){
+            min_ele=2*min_ele-n;
+        }
     }
     
     int top() {
-        return st.top().first;
+        int n=st.top();
+        if(n>min_ele) return n;
+        return min_ele;
     }
     
     int getMin() {
-        return st.top().second;
+        return min_ele;
     }
 };
 
