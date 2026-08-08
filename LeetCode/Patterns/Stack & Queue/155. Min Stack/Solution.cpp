@@ -1,7 +1,8 @@
 class MinStack {
 public:
-    //TC-O(1);
+    //TC-O(1)
     //SC_O(N)
+    int mod=1e+7;
     stack<int> st;
     int min_ele=INT_MAX;
     MinStack() {
@@ -16,7 +17,7 @@ public:
         else{
             if(value>min_ele) st.push(value);
             else{
-                st.push(2*value-min_ele);
+                st.push((2*value)%mod-min_ele);
                 min_ele=value;
             }
         }
