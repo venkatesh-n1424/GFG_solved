@@ -19,13 +19,13 @@ public:
             }
         }
         int val=s2.top();
-        front=val;
         s2.pop();
         return val;
     }
     
     int peek() {
-        return front;
+        if(s2.empty()) return front;
+        return s2.top();
     }
     
     bool empty() {
