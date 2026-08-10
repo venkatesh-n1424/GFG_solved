@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 10 / 100 (10.0%)
+- **Completed:** 11 / 100 (11.0%)
 
 ---
 
@@ -15,7 +15,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Container With Most Water
 - [ ] Move Zeroes
 - [x] [Sort Colors](./C++/Medium/75. Sort Colors/)
-- [ ] Product of Array Except Self
+- [x] [Product of Array Except Self](./C++/Medium/238. Product of Array Except Self/)
 - [ ] Next Permutation
 - [ ] Trapping Rain Water
 - [ ] Find the Duplicate Number
