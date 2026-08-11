@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 11 / 100 (11.0%)
+- **Completed:** 12 / 100 (12.0%)
 
 ---
 
@@ -32,7 +32,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 
 ### 📂 Hash Map & String
 - [x] [Group Anagrams](./C++/Medium/49. Group Anagrams/)
-- [ ] Longest Consecutive Sequence
+- [x] [Longest Consecutive Sequence](./C++/Medium/128. Longest Consecutive Sequence/)
 - [ ] Valid Parentheses
 - [ ] Decode String
 - [ ] Valid Palindrome
