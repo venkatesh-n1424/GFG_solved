@@ -20,18 +20,33 @@ public:
         //     lc=max(c,lc);
         // }
         //better
-        sort(nums.begin(),nums.end());
-        int lastsmaller=INT_MIN,cntcur=0;
+        //sort(nums.begin(),nums.end());
+        // int lastsmaller=INT_MIN,cntcur=0;
+        // for(int i:nums){
+        //     if(i-1==lastsmaller){
+        //         cntcur++;
+        //         lastsmaller=i;
+        //     }
+        //     else if(i!=lastsmaller){
+        //         lastsmaller=i;
+        //         cntcur=1;
+        //     }
+        //     lc=max(cntcur,lc);
+        // }
+        set<int> s;
         for(int i:nums){
-            if(i-1==lastsmaller){
-                cntcur++;
-                lastsmaller=i;
+            s.insert(i);
+        }
+        for(int i:nums){
+            if(!s.count(i-1)){
+                int c=1;
+                int x=i;
+                while(s.count(x+1)){
+                    c++;
+                    x++;
+                }
+                lc=max(c,lc);
             }
-            else if(i!=lastsmaller){
-                lastsmaller=i;
-                cntcur=1;
-            }
-            lc=max(cntcur,lc);
         }
         return lc;
     }
