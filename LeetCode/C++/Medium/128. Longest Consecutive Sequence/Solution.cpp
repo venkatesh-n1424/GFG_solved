@@ -33,15 +33,15 @@ public:
         //     }
         //     lc=max(cntcur,lc);
         // }
-        set<int> s;
+        unordered_set<int> s;
         for(int i:nums){
             s.insert(i);
         }
         for(int i:nums){
-            if(!s.count(i-1)){
+            if(s.find(i-1)==s.end()){
                 int c=1;
                 int x=i;
-                while(s.count(x+1)){
+                while(s.find(x+1)!=s.end()){
                     c++;
                     x++;
                 }
