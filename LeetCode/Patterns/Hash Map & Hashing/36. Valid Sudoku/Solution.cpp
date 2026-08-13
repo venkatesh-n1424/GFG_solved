@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
-        //brute
         for(int i=0;i<9;i++){
             unordered_set<char> s;
             for(int j=0;j<9;j++){
