@@ -3,7 +3,7 @@ public:
     int largestInteger(vector<int>& nums, int k) {
         //brute-O(n^3)
         int n=nums.size();
-        if(n==1) return nums[0];
+        if(k==n) return *max_element(nums.begin(),nums.end());
         int res=-1;
         // for(int& num:nums){
         //     int c=0;
