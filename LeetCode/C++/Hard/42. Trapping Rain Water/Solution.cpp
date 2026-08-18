@@ -10,6 +10,7 @@ public:
         int water=0;
         for(int i=0;i<n;i++){
             int leftmax=prefixmax[i],rightmax=sufixmax[i];
+            if(height[i]<leftmax && height[i]<rightmax)
             water+=(min(leftmax,rightmax)-height[i]);
         }
         return water;
