@@ -1,30 +1,20 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> sol;
-        //Brute 
-        /*
-        int n=nums.size();
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(nums[i]+nums[j]==target) {
-                    sol.emplace_back(i);
-                     sol.emplace_back(j);
-                     break;
-                }
-            }
-        }*/
-        map<int,int> mpp;
-        for(int i=0;i<nums.size();i++){
-            int a=nums[i];
-            int rem=target-a;
-            if(mpp.find(rem)!=mpp.end()){
-                sol.emplace_back(i);
-                sol.emplace_back(mpp[rem]);
-                break;
-            }
-            mpp[a]=i;
+       vector<pair<int,int>> val;
+       vector<int> res;
+       int n=nums.size();
+       for(int i=0;i<n;i++) val.push_back({nums[i],i});
+       sort(val.begin(),val.end());
+       int i=0,j=n-1;
+       while(i<j){
+        if(val[i].first+val[j].first==target){
+            res={val[i].second,val[j].second};
+            break;
         }
-        return sol;
+        else if(val[i].first+val[j].first>target) j--;
+        else i++;
+       }
+       return res;
     }
 };
