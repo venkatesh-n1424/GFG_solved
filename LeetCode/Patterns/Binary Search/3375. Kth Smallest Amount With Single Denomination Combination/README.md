@@ -8,8 +8,8 @@
 Array, Math, Binary Search, Bit Manipulation, Combinatorics, Number Theory
 
 ### 🚀 Performance
-- **Runtime:** 167 ms
-- **Memory:** 20.6 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
