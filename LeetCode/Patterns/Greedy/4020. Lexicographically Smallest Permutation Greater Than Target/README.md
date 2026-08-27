@@ -8,8 +8,8 @@
 Hash Table, String, Greedy, Counting, Enumeration
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 25 ms
+- **Memory:** 20.2 MB
 
 ---
 
