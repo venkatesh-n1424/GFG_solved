@@ -1,54 +1,56 @@
 class Solution {
 public:
-    bool pal(string s){
-        int i=0,j=s.size()-1;
-        while(i<j){
-            if(s[i]!=s[j]) return false;
-            i++;
-            j--;
-        }
-        return true;
-    }
     string lexPalindromicPermutation(string s, string target) {
         int n=s.size();
-        map<int,int> fm;
-        for(char& c:s) fm[c]++;
-        string res="";
-        for(int i=0;i<n;i++){
-            char t=target[i];
-            if(fm[t]>0){
-                fm[t]--;
-                string largest="";
-                for(int j=25;j>=0;j--){
-                    char c = j+'a';
-                    if(fm[c]>0){
-                        largest.append(fm[c],c);
-                    }
-                }
-                if(largest>target.substr(i+1) && pal(t+largest)){
-                    res+=t;
-                    continue;
-                }
-                fm[t]++;
+        vector<int> f(26,0);
+        for(char& c:s) f[c-'a']++;
+        string oddc="";
+        for(int i=0;i<26;i++){
+            if(f[i]%2==1){
+                if(oddc.empty()) oddc+=(i+'a');
+                else return "";
             }
-            for(int j=t-'a'+1;j<26;j++){
-                char c = j+'a';
-                if(fm[c]>0){
-                    res+=c;
-                    fm[c]--;
-                    string smallest="";
-                    for(int k=0;k<26;k++){
-                        char temp=k+'a';
-                        if(fm[temp]>0){
-                            smallest.append(fm[temp],temp);
-                        }
-                    }
-                    if(pal(res+smallest))
-                    return res+smallest;
-                }
-            }
-            return "";
+            f[i]/=2;
         }
+        string p="";
+        for(int i=0;i<n/2;i++){
+            bool valid=false;
+            for(int ci=0;ci<26;ci++){
+                char c=ci+'a';
+                if(f[ci]==0 || c<target[i]) continue;
+                if(c>target[i]){
+                    f[ci]--;
+                    p+=c;
+                    for(int cci=0;cci<26;cci++){
+                        if(f[cci]==0) continue;
+                        p.append(f[cci],cci+'a');
+                    }
+                    string rev=p;
+                    reverse(rev.begin(),rev.end());
+                    return p+oddc+rev;
+                }
+                f[ci]--;
+                p+=c;
+                string copy=p;
+                for(int cci=25;cci>=0;cci--){
+                    if(f[cci]==0) continue;
+                    copy.append(f[cci],cci+'a');
+                }
+                string rev=copy;
+                reverse(rev.begin(),rev.end());
+                if(p+oddc+rev>target){
+                valid=true;
+                break;
+                }
+                f[ci]++;
+                p.pop_back();
+            }
+            if(!valid) return "";
+        }
+        string rev=p;
+        reverse(rev.begin(),rev.end());
+        string res=p+oddc+rev;
+        if(res>target) return res;
         return "";
     }
 };
