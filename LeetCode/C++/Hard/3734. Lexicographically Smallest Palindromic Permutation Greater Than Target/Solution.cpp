@@ -25,7 +25,7 @@ public:
                         largest.append(fm[c],c);
                     }
                 }
-                if(largest>target.substr(i+1) &&){
+                if(largest>target.substr(i+1) && pal(t+largest)){
                     res+=t;
                     continue;
                 }
