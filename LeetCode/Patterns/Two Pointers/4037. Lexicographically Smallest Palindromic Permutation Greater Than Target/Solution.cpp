@@ -38,7 +38,7 @@ public:
                 }
                 string rev=copy;
                 reverse(rev.begin(),rev.end());
-                if(p+oddc+rev>target){
+                if(copy+oddc+rev>target){
                 valid=true;
                 break;
                 }
