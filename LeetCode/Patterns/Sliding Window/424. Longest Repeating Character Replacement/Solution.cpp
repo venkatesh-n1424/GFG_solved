@@ -15,6 +15,19 @@ public:
         //         else break;
         //     }
         // }
+        int i=0,j=0,maxf=0;
+        vector<int> f(26,0);
+        while(j<n){
+            maxf=max(maxf,++f[s[j]-'A']);
+            while((j-i+1)-maxf>k){
+                f[s[i]-'A']--;
+                i++;
+                maxf=0;
+                for(int k=0;k<26;k++) maxf=max(maxf,f[k]);
+            }
+            res=max(res,j-i+1);
+            j++;
+        }
         return res;
     }
 };
