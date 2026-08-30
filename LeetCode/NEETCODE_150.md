@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 3 / 150 (2.0%)
+- **Completed:** 4 / 150 (2.7%)
 
 ---
 
@@ -32,7 +32,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Longest Substring Without Repeating Characters](./C++/Medium/3. Longest Substring Without Repeating Characters/)
 - [x] [Longest Repeating Character Replacement](./C++/Medium/424. Longest Repeating Character Replacement/)
 - [x] [Permutation in String](./C++/Medium/567. Permutation in String/)
-- [ ] Minimum Window Substring
+- [x] [Minimum Window Substring](./C++/Hard/76. Minimum Window Substring/)
 - [ ] Sliding Window Maximum
 
 ### 📂 Stack
