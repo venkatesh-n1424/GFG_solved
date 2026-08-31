@@ -8,8 +8,8 @@
 Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 31 ms
+- **Memory:** 139.2 MB
 
 ---
 
