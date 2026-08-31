@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        //brute
+        //brute - Tc
         int n=nums.size();
         int i=0,j=k-1;
         vector<int> res;
