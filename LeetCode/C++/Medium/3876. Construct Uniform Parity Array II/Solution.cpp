@@ -11,6 +11,7 @@ public:
             if(nums1[i]%2==0){
                 if(i==n-1) return false;
                 for(int j=i+1;j<n;j++){
+                    if
                     if(nums1[i]-nums1[j]<1) return false;
                 }
             }
