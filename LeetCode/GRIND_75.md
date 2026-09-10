@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 18 / 75 (24.0%)
+- **Completed:** 19 / 75 (25.3%)
 
 ---
 
@@ -24,7 +24,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 ### 📂 Binary
 - [ ] Sum of Two Integers
 - [x] [Number of 1 Bits](./C++/Easy/191. Number of 1 Bits/)
-- [ ] Counting Bits
+- [x] [Counting Bits](./C++/Easy/338. Counting Bits/)
 - [ ] Missing Number
 - [ ] Reverse Bits
 
