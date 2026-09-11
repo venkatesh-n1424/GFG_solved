@@ -1,6 +1,6 @@
 # 📝 78. Subsets (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/subsets)
+🔗 [Problem Link](https://leetcode.com/problems/subsets/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Backtracking, Bit Manipulation
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 3 ms
+- **Memory:** 9.8 MB
 
 ---
 
