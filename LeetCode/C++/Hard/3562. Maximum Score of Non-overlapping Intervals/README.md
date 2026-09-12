@@ -8,8 +8,8 @@
 Array, Binary Search, Dynamic Programming, Sorting
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 2166 ms
+- **Memory:** 384.5 MB
 
 ---
 
