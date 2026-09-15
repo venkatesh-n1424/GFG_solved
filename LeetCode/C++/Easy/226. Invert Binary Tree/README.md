@@ -1,6 +1,6 @@
 # 📝 226. Invert Binary Tree (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/invert-binary-tree/)
+🔗 [Problem Link](https://leetcode.com/problems/invert-binary-tree)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
