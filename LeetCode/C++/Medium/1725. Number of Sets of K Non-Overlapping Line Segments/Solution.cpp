@@ -1,24 +1,20 @@
 class Solution {
 public:
     int mod=1e9+7;
-    long long nCr(int n, int r) {
-    if (r > n) return 0;
-    if (r == 0 || r == n) return 1;
-    
-    // Since nCr(n, r) == nCr(n, n - r), take the smaller r for speed
-    if (r > n - r) {
-        r = n - r;
+    vector<vector<int>> dp;
+    int solve(int n,int k,int i){
+        if(k==0) return 1;
+        if(i>=n) return 0;
+        if(dp[k][i]!=-1) return dp[k][i]%mod;
+        int skip = solve(n,k,i+1)%mod;
+        int take=0;
+        for(int j=i+1;j<n;j++){
+            take=(take+solve(n,k-1,j))%mod;
+        }
+        return dp[k][i]=(skip+take)%mod;
     }
-    
-    long long ans = 1;
-    for (int i = 1; i <= r; i++) {
-        ans = (ans*(n - r + i))%mod;
-        ans /= i;
-    }
-    return ans;
-}
     int numberOfSets(int n, int k) {
-        int res = nCr(n+k-1,k*2)%mod;
-        return res;
+        dp.resize(1001,vector<int>(1001,-1));
+        return solve(n,k,0);
     }
 };
