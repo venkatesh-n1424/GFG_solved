@@ -8,7 +8,7 @@
 Math, Dynamic Programming, Combinatorics, Prefix Sum
 
 ### 🚀 Performance
-- **Runtime:** 58 ms
+- **Runtime:** 56 ms
 - **Memory:** 34.6 MB
 
 ---
