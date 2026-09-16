@@ -12,7 +12,7 @@ public:
     
     long long ans = 1;
     for (int i = 1; i <= r; i++) {
-        ans *= (n - r + i);
+        ans = (ans*(n - r + i))%mod;
         ans /= i;
     }
     return ans;
