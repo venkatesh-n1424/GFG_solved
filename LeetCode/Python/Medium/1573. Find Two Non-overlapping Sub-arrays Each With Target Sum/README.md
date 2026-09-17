@@ -8,8 +8,8 @@
 Array, Hash Table, Binary Search, Dynamic Programming, Sliding Window
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 125 ms
+- **Memory:** 31.1 MB
 
 ---
 
