@@ -12,16 +12,21 @@
 class Solution {
 public:
     int maxi=0;
-    int height(TreeNode* node){
+    int findlh(TreeNode* node){
         if(node==nullptr) return 0;
-        int lh=height(node->left);
-        int rh=height(node->right);
-        maxi=max(maxi,lh+rh);
-        return 1+max(lh,rh);
+        return 1+max(findlh(node->left),findlh(node->right));
+    }
+    int findrh(TreeNode* node){
+        if(node==nullptr) return 0;
+        return 1+max(findrh(node->right),findrh(node->left));
     }
     int diameterOfBinaryTree(TreeNode* root) {
-        //optimal
-        int h=height(root);
+        if(root==nullptr) return 0;
+        int lh=findlh(root->left);
+        int rh=findrh(root->right);
+        maxi=max(maxi,rh+lh);
+        diameterOfBinaryTree(root->left);
+        diameterOfBinaryTree(root->right);
         return maxi;
     }
 };
