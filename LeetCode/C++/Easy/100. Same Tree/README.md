@@ -1,6 +1,6 @@
 # 📝 100. Same Tree (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/same-tree)
+🔗 [Problem Link](https://leetcode.com/problems/same-tree/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Tree, Depth-First Search, Breadth-First Search, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 12.7 MB
 
 ---
 
