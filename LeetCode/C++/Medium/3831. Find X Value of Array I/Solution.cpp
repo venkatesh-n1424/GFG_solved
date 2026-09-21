@@ -17,8 +17,8 @@ public:
         dp[0][nums[0]%k]=1;
         for(int i=1;i<n;i++){
             dp[i][nums[i]%k]=1;
-            for(int r=0;r<k;r++){
-                long long col = (long long)(r*nums[i])%k;
+            for(long long r=0;r<k;r++){
+                long long col = (r*nums[i])%k;
                 dp[i][col]+=dp[i-1][r];
             }
         }
