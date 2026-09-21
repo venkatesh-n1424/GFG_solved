@@ -5,7 +5,7 @@ public:
         int n=nums.size();
         vector<long long> res(k,0);
         for(int i=0;i<n;i++){
-            int prod=1;
+            l prod=1;
             for(int j=i;j<n;j++){
                 prod*=nums[j];
                 res[prod%k]++;
