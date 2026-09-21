@@ -86,7 +86,8 @@ class Solution {
             }
             if(mp1!=mp2) return false;
         }
-        if(!q1.empty() || !q2.empty()) return false;
-        return true;
+        // if(!q1.empty() || !q2.empty()) return false;
+        // return true;
+        return q1.empty() && q2.empty();
     }
 };
