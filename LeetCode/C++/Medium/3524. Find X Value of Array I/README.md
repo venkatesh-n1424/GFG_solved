@@ -1,6 +1,6 @@
 # 📝 3524. Find X Value of Array I (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/find-x-value-of-array-i)
+🔗 [Problem Link](https://leetcode.com/problems/find-x-value-of-array-i/?envType=daily-question&envId=2026-09-21)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
