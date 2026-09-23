@@ -4,6 +4,7 @@ public:
         int sum=0,n=nums.size();
         for(int& i:nums) sum+=i;
         int t=sum-x,lsa=-1;
+        if(t<0) return lsa;
         int l=0,r=0,cur=0;
         while(r<n){
             cur+=nums[r];
