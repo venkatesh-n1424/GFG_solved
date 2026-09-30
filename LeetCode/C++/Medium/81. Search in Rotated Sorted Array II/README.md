@@ -1,6 +1,6 @@
 # 📝 81. Search in Rotated Sorted Array II (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)
+🔗 [Problem Link](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Binary Search
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 18.2 MB
 
 ---
 
