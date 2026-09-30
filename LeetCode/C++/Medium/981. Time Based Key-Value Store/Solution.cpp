@@ -11,7 +11,7 @@ public:
     
     string get(string key, int timestamp) {
         string res="";
-        if(mpp.find(key)==mpp.end()) return res;
+        //if(mpp.find(key)==mpp.end()) return res;
         vector<pair<string,int>> vals=mpp[key];
         int l=0,r=vals.size()-1;
         while(l<=r){

@@ -1,6 +1,6 @@
 # 📝 981. Time Based Key-Value Store (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/time-based-key-value-store)
+🔗 [Problem Link](https://leetcode.com/problems/time-based-key-value-store/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
