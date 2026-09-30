@@ -8,8 +8,8 @@
 Hash Table, String, Binary Search, Design
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 73 ms
+- **Memory:** 137 MB
 
 ---
 
