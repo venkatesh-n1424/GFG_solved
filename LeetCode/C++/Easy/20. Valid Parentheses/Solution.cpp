@@ -1,17 +1,15 @@
 class Solution {
 public:
     bool isValid(string s) {
-        stack<char> st;
+        stack<char> par;
         unordered_map<char,char> mpp={{')','('},{'}','{'},{']','['}};
         for(char& c:s){
-            if(c=='('||c=='{'||c=='[') st.push(c);
-            else{
-                if(st.top()==mpp[c]){
-                    st.pop();
-                }
-                else return false;
-            }
+            if(c=='('||c=='{'||c=='[') par.push(c);
+            else if(!par.empty() && mpp[c]==par.top()) par.pop();
+            else return false;
+            
         }
-        return st.empty();
+        if(par.empty()) return true;
+        return false;
     }
 };
