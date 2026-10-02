@@ -1,12 +1,9 @@
 class Solution {
 public:
-    double solve(double x,long n){
-        if(n==0) return 1.0;
-        if(n<0) return solve(1/x,-n);
-        if(n%2) return x*solve(x*x,(n-1)/2);
-        return solve(x*x,n/2);
-    }
     double myPow(double x, int n) {
-        return solve(x,n);
+        if(n==0) return 1.0;
+        if(n<0) return myPow(1/x,-n);
+        if(n&1) return x*myPow(x*x,(n-1)/2);
+        return myPow(x*x,n/2);
     }
 };
