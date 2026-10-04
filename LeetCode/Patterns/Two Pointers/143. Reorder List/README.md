@@ -2,14 +2,14 @@
 
 🔗 [Problem Link](https://leetcode.com/problems/reorder-list/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
 ### 💡 Tags
 Linked List, Two Pointers, Stack, Recursion
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
-- **Memory:** 23.3 MB
+- **Runtime:** 2 ms
+- **Memory:** 48.4 MB
 
 ---
 

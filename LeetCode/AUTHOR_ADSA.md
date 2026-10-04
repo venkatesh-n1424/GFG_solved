@@ -36,7 +36,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 
 ### 📂 Module  1.4: Reordering, Palindrome & Pa
 - [ ] Palindrome Linked List
-- [x] [Reorder List](./C++/Medium/143. Reorder List/)
+- [x] [Reorder List](./Java/Medium/143. Reorder List/)
 - [ ] Next Greater Node In Linked List
 - [ ] Double a Number Represented as a Linked List
 
