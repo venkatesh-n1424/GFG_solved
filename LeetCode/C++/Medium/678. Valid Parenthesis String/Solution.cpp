@@ -1,5 +1,6 @@
 class Solution {
 public:
+    vector<
     bool solve(string& s,int idx,int cnt){
         if(cnt<0) return false;
         if(idx==s.size()) return cnt==0;
