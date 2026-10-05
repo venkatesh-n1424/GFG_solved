@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 6 / 65 (9.2%)
+- **Completed:** 7 / 65 (10.8%)
 
 ---
 
@@ -70,7 +70,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [x] [Longest Valid Parentheses](./C++/Hard/32. Longest Valid Parentheses/)
 - [x] [Maximum Nesting Depth of the Parentheses](./C++/Easy/1737. Maximum Nesting Depth of the Parentheses/)
 - [ ] Remove Outermost Parentheses
-- [ ] Score of Parentheses
+- [x] [Score of Parentheses](./C++/Medium/886. Score of Parentheses/)
 - [ ] Minimum Add to Make Parentheses Valid
 - [ ] Minimum Remove to Make Valid Parentheses
 - [ ] Minimum Insertions to Balance a Parentheses String
