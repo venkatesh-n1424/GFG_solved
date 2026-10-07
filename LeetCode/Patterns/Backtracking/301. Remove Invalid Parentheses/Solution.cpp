@@ -20,8 +20,7 @@ public:
         for(const string& t:res) max_size=max(max_size,(int)t.size());
         vector<string> ans;
         for(const string& t:res){
-            int ml=t.size();
-            if(ml==max_size) ans.push_back(t);
+            if(t.size()==max_size) ans.push_back(t);
         }
         return ans;
     }
