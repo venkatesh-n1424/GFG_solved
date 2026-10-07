@@ -8,8 +8,8 @@
 String, Backtracking, Breadth-First Search
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 1900 ms
+- **Memory:** 145.9 MB
 
 ---
 
