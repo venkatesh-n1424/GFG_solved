@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 36 / 100 (36.0%)
+- **Completed:** 37 / 100 (37.0%)
 
 ---
 
@@ -53,7 +53,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [x] [Copy List with Random Pointer](./C++/Medium/138. Copy List with Random Pointer/)
 - [x] [LRU Cache](./C++/Medium/146. LRU Cache/)
 - [x] [Sort List](./C++/Medium/148. Sort List/)
-- [ ] Merge k Sorted Lists
+- [x] [Merge k Sorted Lists](./C++/Hard/23. Merge k Sorted Lists/)
 
 ### 📂 Binary Tree & BST
 - [x] [Invert Binary Tree](./C++/Easy/226. Invert Binary Tree/)
