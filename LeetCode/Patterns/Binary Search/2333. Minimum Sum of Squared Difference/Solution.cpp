@@ -8,7 +8,7 @@ public:
         while(k--){
             int t=pq.top();
             pq.pop();
-            pq.push();
+            pq.push(t-1);
         }
         long long sum=0;
         while(!pq.empty()){
