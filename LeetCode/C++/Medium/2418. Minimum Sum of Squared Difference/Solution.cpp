@@ -12,7 +12,7 @@ public:
         }
         long long sum=0;
         while(!pq.empty()){
-            int t=pq.top();
+            long long t=pq.top();
             sum+=(t*t);
             pq.pop();
         }
