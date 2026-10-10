@@ -19,7 +19,7 @@ public:
         //     pq.pop();
         // }
         vector<long long> freq(1e5+1,0);
-        int totaldiff=0,maxdiff=0;
+        long long totaldiff=0,maxdiff=0;
         for(int i=0;i<n;i++){
             int diff=abs(nums1[i]-nums2[i]);
             freq[diff]++;
