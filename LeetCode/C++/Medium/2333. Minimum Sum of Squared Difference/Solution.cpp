@@ -5,14 +5,14 @@ public:
         int k=k1+k2;
         priority_queue<int> pq;
         for(int i=0;i<n;i++) pq.push(abs(nums1[i]-nums2[i]));
-        while(k--){
+        while(k-- && pq.top()>0){
             int t=pq.top();
             pq.pop();
             pq.push(t-1);
         }
         long long sum=0;
         while(!pq.empty()){
-            int t=pq.top();
+             t=pq.top();
             sum+=(t*t);
             pq.pop();
         }
