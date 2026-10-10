@@ -1,6 +1,6 @@
 # 📝 2333. Minimum Sum of Squared Difference (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/minimum-sum-of-squared-difference)
+🔗 [Problem Link](https://leetcode.com/problems/minimum-sum-of-squared-difference/?envType=daily-question&envId=2026-10-10)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
