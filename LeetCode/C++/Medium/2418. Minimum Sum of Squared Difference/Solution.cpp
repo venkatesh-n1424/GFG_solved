@@ -35,7 +35,7 @@ public:
             k-=moves;
         }
         long long sum=0;
-        for(int d=1;d<=maxdiff;d++){
+        for(long long d=1;d<=maxdiff;d++){
             sum+=(d*d*freq[d]);
         }
         return sum;
