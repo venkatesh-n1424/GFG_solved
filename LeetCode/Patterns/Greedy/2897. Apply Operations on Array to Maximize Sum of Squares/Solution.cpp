@@ -23,7 +23,7 @@ public:
                     bits[bitidx]--;
                 }
             }
-            res = (res+t*t)%mod;
+            res = (res+(t*t)%mod;
         }
         return res%mod;
     }
