@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 41 / 150 (27.3%)
+- **Completed:** 42 / 150 (28.0%)
 
 ---
 
@@ -76,7 +76,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Lowest Common Ancestor of a Binary Search Tree](./C++/Medium/235. Lowest Common Ancestor of a Binary Search Tree/)
 - [x] [Binary Tree Level Order Traversal](./C++/Medium/102. Binary Tree Level Order Traversal/)
 - [x] [Binary Tree Right Side View](./C++/Medium/199. Binary Tree Right Side View/)
-- [ ] Count Good Nodes in Binary Tree
+- [x] [Count Good Nodes in Binary Tree](./C++/Medium/1448. Count Good Nodes in Binary Tree/)
 - [ ] Validate Binary Search Tree
 - [ ] Kth Smallest Element in a BST
 - [ ] Construct Binary Tree from Preorder and Inorder Traversal
