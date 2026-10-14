@@ -8,7 +8,7 @@ public:
             sum-=min(sum,9);
         }
         if(d>num) return "";
-        if(d<num) res=res*10;
+        if(d<num) res=res*pow(10,num-d);
         return to_string(res);
     }
 };
