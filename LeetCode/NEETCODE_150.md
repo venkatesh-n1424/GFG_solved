@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 43 / 150 (28.7%)
+- **Completed:** 44 / 150 (29.3%)
 
 ---
 
@@ -78,7 +78,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Binary Tree Right Side View](./C++/Medium/199. Binary Tree Right Side View/)
 - [x] [Count Good Nodes in Binary Tree](./C++/Medium/1448. Count Good Nodes in Binary Tree/)
 - [x] [Validate Binary Search Tree](./C++/Medium/98. Validate Binary Search Tree/)
-- [ ] Kth Smallest Element in a BST
+- [x] [Kth Smallest Element in a BST](./C++/Medium/230. Kth Smallest Element in a BST/)
 - [ ] Construct Binary Tree from Preorder and Inorder Traversal
 - [ ] Binary Tree Maximum Path Sum
 - [ ] Serialize and Deserialize Binary Tree

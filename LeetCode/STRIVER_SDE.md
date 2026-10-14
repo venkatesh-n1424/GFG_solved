@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 26 / 76 (34.2%)
+- **Completed:** 27 / 76 (35.5%)
 
 ---
 
@@ -87,7 +87,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Symmetric Tree
 - [x] [Validate Binary Search Tree](./C++/Medium/98. Validate Binary Search Tree/)
 - [x] [Lowest Common Ancestor of a Binary Search Tree](./C++/Medium/235. Lowest Common Ancestor of a Binary Search Tree/)
-- [ ] Kth Smallest Element in a BST
+- [x] [Kth Smallest Element in a BST](./C++/Medium/230. Kth Smallest Element in a BST/)
 - [ ] Serialize and Deserialize Binary Tree
 
 ### 📂 Dynamic Programming & Graphs
