@@ -1,6 +1,6 @@
 # 📝 230. Kth Smallest Element in a BST (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
+🔗 [Problem Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
