@@ -7,7 +7,8 @@ public:
         ans.push_back(vector<int>{});
         ans.push_back(vector<int>{nums[0]});
         int s,e;
-        for(int i=1;i<n;i++){
+        for(int i=1;i<n;i++){\
+        
             if(i>0 && nums[i]!=nums[i-1]){
             int s=ans.size();
             for(int j=0;j<s;j++){
