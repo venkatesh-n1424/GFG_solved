@@ -10,7 +10,7 @@ public:
             if(i>0 && nums[i]!=nums[i-1]){
             int s=ans.size();
             for(int j=0;j<s;j++){
-                vector<int> list=ans[j];
+                vector<int> list={ans[j];
                 list.emplace_back(nums[i]);
                 ans.push_back(list);
             }
