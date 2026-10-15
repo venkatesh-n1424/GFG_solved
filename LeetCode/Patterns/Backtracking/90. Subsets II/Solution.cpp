@@ -5,19 +5,18 @@ public:
         sort(nums.begin(),nums.end());
         vector<vector<int>> ans;
         ans.push_back(vector<int>{});
-        ans.push_back(vector<int>{nums[0]});
-        int s,e;
-        for(int i=1;i<n;i++){
-            if(i>0 && nums[i]!=nums[i-1]){
+        int start,end;
+        for(int i=0;i<n;i++){
+            start=0;
+            if(i>0 && nums[i]==nums[i-1]) start=end+1;
             int s=ans.size();
-            for(int j=0;j<s;j++){
+            end=s-1;
+            for(int j=start;j<s;j++){
                 vector<int> list=ans[j];
                 list.emplace_back(nums[i]);
                 ans.push_back(list);
+                }
             }
-            }
-            }
-        }
         return ans;
     }
 };
