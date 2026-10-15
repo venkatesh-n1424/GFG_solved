@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 31 / 75 (41.3%)
+- **Completed:** 32 / 75 (42.7%)
 
 ---
 
@@ -92,7 +92,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 - [x] [Binary Tree Level Order Traversal](./C++/Medium/102. Binary Tree Level Order Traversal/)
 - [ ] Serialize and Deserialize Binary Tree
 - [x] [Subtree of Another Tree](./C++/Easy/572. Subtree of Another Tree/)
-- [ ] Construct Binary Tree from Preorder and Inorder Traversal
+- [x] [Construct Binary Tree from Preorder and Inorder Traversal](./C++/Medium/105. Construct Binary Tree from Preorder and Inorder Traversal/)
 - [x] [Validate Binary Search Tree](./C++/Medium/98. Validate Binary Search Tree/)
 - [x] [Kth Smallest Element in a BST](./C++/Medium/230. Kth Smallest Element in a BST/)
 - [x] [Lowest Common Ancestor of a Binary Search Tree](./C++/Medium/235. Lowest Common Ancestor of a Binary Search Tree/)
