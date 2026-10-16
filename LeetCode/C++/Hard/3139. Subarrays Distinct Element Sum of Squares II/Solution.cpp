@@ -1,6 +1,7 @@
 class Solution {
 public:
     int sumCounts(vector<int>& nums) {
+        int mod=1e9+7;
         int n=nums.size(),res=0;
         for(int i=0;i<n;i++){
             unordered_set<int> s;
@@ -12,9 +13,8 @@ public:
                 // res+=pow(s.size(),2);
                 //TC-O(n^2)
                 if(!s.contains(nums[j])) s.insert(nums[j]);
-                res+=pow(s.size(),2);
+                res=(res+(long)pow(s.size(),2))%mod;
             }
-          
         }
         return res;
     }
