@@ -15,7 +15,7 @@ public:
         ll x=solve(left_arr)%mod;
         ll y=solve(right_arr)%mod;
         ll z=pt[n-1][left_arr.size()];
-        return (int)((x*y)%mod*z)%mod;
+        return (int)(((x*y)%mod*z)%mod);
     }
     int numOfWays(vector<int>& nums) {
         int n=nums.size();
@@ -23,9 +23,9 @@ public:
         for(int i=0;i<=n;i++){
             pt[i]=vector<ll>(i+1,1);
             for(int j=1;j<i;j++){
-                pt[i][j]=pt[i-1][j]+pt[i-1][j-1];
+                pt[i][j]=(pt[i-1][j]+pt[i-1][j-1])%mod;
             }
         }
-        return solve(nums)-1;
+        return (solve(nums)-1)%mod;
     }
 };
