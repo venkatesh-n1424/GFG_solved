@@ -24,6 +24,7 @@ class Solution {
         //memoization Tc-O(n) Sc-(n)
         // dp.resize(n+1,-1);
         // return solve(n,1);
+        //TC-O(logn) SC-O(1)
         int cnt=0;
         while(n>1){
             if(n%3==0 && n/3>=1) n/=3;
