@@ -12,7 +12,7 @@ public:
             if(nums[i]<root) left_arr.emplace_back(nums[i]);
             else right_arr.emplace_back(nums[i]);
         }
-        int l_ans=solve(left_arr);
+        int =solve(left_arr);
         int r_ans=solve(right_arr);
         return (int)(pt[n-1][left_arr.size()]*l_ans*r_ans-1)%mod;
     }
