@@ -12,20 +12,21 @@ public:
             if(nums[i]<root) left_arr.emplace_back(nums[i]);
             else right_arr.emplace_back(nums[i]);
         }
-        int l_ans=solve(left_arr);
-        int r_ans=solve(right_arr);
-        return (int)(pt[n-1][left_arr.size()]*l_ans*r_ans-1)%mod;
+        ll x=solve(left_arr)%mod;
+        ll y=solve(right_arr)%mod;
+        ll z=pt[n-1][left_arr.size()];
+        return (int)((x*y)%mod*z)%mod;
     }
     int numOfWays(vector<int>& nums) {
         int n=nums.size();
-        pt.resize(n,vector<int>(n,1));
-        for(int i=0;i<n;i++){
+        pt.resize(n+1,vector<int>(n+1,1));
+        for(int i=0;i<=n;i++){
             for(int j=0;j<i+1;j++){
                 if(i-1>=0 && j-1>=0 && j<i){
                     pt[i][j]=pt[i-1][j]+pt[i-1][j-1];
                 }
             }
         }
-        return solve(nums);
+        return solve(nums)-1;
     }
 };
