@@ -2,7 +2,7 @@ class Solution {
 public:
     typedef long long ll;
     ll mod=1e9+7;
-    vector<vector<int>> pt;
+    vector<vector<ll>> pt;
     int solve(vector<int>& nums){
         int n=nums.size();
         if(n<3) return 1;
@@ -21,10 +21,9 @@ public:
         int n=nums.size();
         pt.resize(n+1);
         for(int i=0;i<=n;i++){
-            for(int j=0;j<i+1;j++){
-                if(i-1>=0 && j-1>=0 && j<i){
-                    pt[i][j]=pt[i-1][j]+pt[i-1][j-1];
-                }
+            pt[i]=vector<ll>(i+1,1);
+            for(int j=1;j<i;j++){
+                pt[i][j]=pt[i-1][j]+pt[i-1][j-1];
             }
         }
         return solve(nums)-1;
