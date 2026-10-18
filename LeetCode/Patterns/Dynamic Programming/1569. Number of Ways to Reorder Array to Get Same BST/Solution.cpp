@@ -27,6 +27,6 @@ public:
                 }
             }
         }
-        return solve(nums);
+        return solve(nums)-1;
     }
 };
