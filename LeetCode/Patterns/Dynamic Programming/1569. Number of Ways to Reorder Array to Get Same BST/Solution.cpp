@@ -12,9 +12,10 @@ public:
             if(nums[i]<root) left_arr.emplace_back(nums[i]);
             else right_arr.emplace_back(nums[i]);
         }
-        int =solve(left_arr);
-        int r_ans=solve(right_arr);
-        return (int)(pt[n-1][left_arr.size()]*l_ans*r_ans-1)%mod;
+        ll x=solve(left_arr)%mod;
+        ll y=solve(right_arr)%mod;
+        ll z=pt[n-1][left_arr.size()];
+        return (int)((x*y)%mod*z)%mod;
     }
     int numOfWays(vector<int>& nums) {
         int n=nums.size();
