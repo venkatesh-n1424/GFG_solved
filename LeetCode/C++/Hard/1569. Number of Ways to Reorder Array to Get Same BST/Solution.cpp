@@ -19,8 +19,8 @@ public:
     }
     int numOfWays(vector<int>& nums) {
         int n=nums.size();
-        pt.resize(n,vector<int>(n,1));
-        for(int i=0;i<n;i++){
+        pt.resize(n+1,vector<int>(n+1,1));
+        for(int i=0;i<=n;i++){
             for(int j=0;j<i+1;j++){
                 if(i-1>=0 && j-1>=0 && j<i){
                     pt[i][j]=pt[i-1][j]+pt[i-1][j-1];
