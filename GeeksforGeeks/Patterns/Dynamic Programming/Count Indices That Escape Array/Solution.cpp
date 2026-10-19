@@ -35,6 +35,12 @@ class Solution {
         //     }
         // }
         // return cnt;
+        //TC-O(n) SC-O(n)
+        /* 0->not visited
+        1->good
+        2->bad
+        3->currently in dfs
+        */
         this->arr=arr;
         n=arr.size();
         state=vector<int>(n,0);
