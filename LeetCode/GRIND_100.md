@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 41 / 100 (41.0%)
+- **Completed:** 42 / 100 (42.0%)
 
 ---
 
@@ -39,7 +39,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Longest Palindromic Substring
 - [ ] Palindromic Substrings
 - [ ] Regular Expression Matching
-- [ ] Letter Combinations of a Phone Number
+- [x] [Letter Combinations of a Phone Number](./C++/Medium/17. Letter Combinations of a Phone Number/)
 
 ### 📂 Linked List
 - [x] [Reverse Linked List](./C++/Easy/206. Reverse Linked List/)
