@@ -27,7 +27,7 @@ public:
         solve(nums,i+1,t,res);
     }
     vector<vector<int>> combinationSum(vector<int>& nums, int target) {
-        sort(nums.begin(),nums.end());
+        //sort(nums.begin(),nums.end());
         solve(nums,0,target,vector<int>{});
         return ans;
     }
