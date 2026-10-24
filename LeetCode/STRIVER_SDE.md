@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 32 / 76 (42.1%)
+- **Completed:** 33 / 76 (43.4%)
 
 ---
 
@@ -49,7 +49,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 ### 📂 Greedy & Backtracking
 - [x] [Combination Sum](./C++/Medium/39. Combination Sum/)
 - [x] [Combination Sum II](./C++/Medium/40. Combination Sum II/)
-- [ ] Palindrome Partitioning
+- [x] [Palindrome Partitioning](./C++/Medium/131. Palindrome Partitioning/)
 - [x] [Permutations](./C++/Medium/46. Permutations/)
 - [ ] N-Queens
 - [ ] Sudoku Solver
