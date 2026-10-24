@@ -1,6 +1,6 @@
 # 📝 2409. Count Days Spent Together (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/count-days-spent-together)
+🔗 [Problem Link](https://leetcode.com/problems/count-days-spent-together/?envType=daily-question&envId=2026-10-24)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
