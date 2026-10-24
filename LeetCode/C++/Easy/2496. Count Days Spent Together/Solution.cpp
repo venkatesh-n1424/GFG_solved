@@ -11,6 +11,8 @@ public:
         int la=pdays[stoi(leaveAlice.substr(0,2))-1]+stoi(leaveAlice.substr(3,2));
         int ab=pdays[stoi(arriveBob.substr(0,2))-1]+stoi(arriveBob.substr(3,2));
         int lb=pdays[stoi(leaveBob.substr(0,2))-1]+stoi(leaveBob.substr(3,2));
-        return min(la,lb)-max(aa,ab)+1;
+        int ans=min(la,lb)-max(aa,ab)+1;
+        if(ans<0) return 0;
+        return ans;
     }
 };
