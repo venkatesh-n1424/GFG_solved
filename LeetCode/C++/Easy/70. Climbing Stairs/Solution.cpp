@@ -1,31 +1,38 @@
 class Solution {
 public:
     typedef struct{
-        long long v11,v12,v21,v22;
+        int m[2][2];
     }mat;
-    mat I(){
-        return mat {1,0,0,1};
-    }
-    mat mul(mat a,mat b){
-        return mat {
-            a.v11*b.v11+a.v12*b.v21,
-            a.v11*b.v12+a.v12*b.v22,
-            a.v21*b.v11+a.v22*b.v21,
-            a.v21*b.v12+a.v22*b.v22
+    mat iden(){
+        mat I={
+        {{1,0},{0,1}}
         };
+        return I;
     }
-    mat pow(mat a,int b){
-        if(b==0) return I();
+    mat mul(mat &a,mat &b){
+        mat c={
+            {{0,0},{0,0}}
+        };
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                for(int k=0;k<2;k++){
+                    c.m[i][j]+=a.m[i][k]*b.m[k][j];
+                }
+            }
+        }
+        return c;
+    }
+    mat pow(mat &a,int b){
+        if(b==0) return iden();
         mat ans=pow(a,b/2);
         ans=mul(ans,ans);
         if(b%2!=0) ans=mul(ans,a);
         return ans;
     }
     int climbStairs(int n) {
-        mat fib=mat{1,1,1,0};
         if(n==1) return 1;
-        if(n==2) return 2;
-        mat pa=pow(fib,n-2);
-        return 2*pa.v11+pa.v12;
+        mat a={{{1,1},{1,0}}};
+        mat p=pow(a,n-1);
+        return p.m[0][0]+p.m[0][1];
     }
 };
