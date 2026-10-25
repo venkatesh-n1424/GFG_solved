@@ -6,7 +6,7 @@ public:
     mat I(){
         return mat {1,0,0,1};
     }
-    mat mul(mat &a,mat &b){
+    mat mul(mat a,mat b){
         return mat {
             a.v11*b.v11+a.v12*b.v21,
             a.v11*b.v12+a.v12*b.v22,
