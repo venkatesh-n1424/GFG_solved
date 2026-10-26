@@ -6,7 +6,7 @@ public:
         int res=0;
         int dr[4]={-1,1,0,0};
         int dc[4]={0,0,-1,1};
-        function<int(int,int)> dfs=[&](int i,int j){
+        function<(int,int)> dfs=[&](int i,int j){
             if(i<0 || i>=m || j<0 || j>=n || grid[i][j]==0 || seen.find(make_pair(i,j))!=seen.end()) return 0;
             seen.insert(make_pair(i,j));
             int sum=grid[i][j];
