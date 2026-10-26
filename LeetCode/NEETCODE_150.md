@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 54 / 150 (36.0%)
+- **Completed:** 55 / 150 (36.7%)
 
 ---
 
@@ -125,7 +125,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 
 ### 📂 1-D Dynamic Programming
 - [x] [Climbing Stairs](./C++/Easy/70. Climbing Stairs/)
-- [ ] Min Cost Climbing Stairs
+- [x] [Min Cost Climbing Stairs](./C++/Easy/746. Min Cost Climbing Stairs/)
 - [ ] House Robber
 - [ ] House Robber II
 - [ ] Longest Palindromic Substring
