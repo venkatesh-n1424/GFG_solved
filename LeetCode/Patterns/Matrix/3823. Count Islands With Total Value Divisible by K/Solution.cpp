@@ -7,7 +7,7 @@ public:
         int dr[4]={-1,1,0,0};
         int dc[4]={0,0,-1,1};
         function<long long(int,int)> dfs=[&](int i,int j){
-            if(i<0 || i>=m || j<0 || j>=n || grid[i][j]==0 || seen.find(make_pair(i,j))!=seen.end()) return 0;
+            if(i<0 || i>=m || j<0 || j>=n || grid[i][j]==0 || seen.find(make_pair(i,j))!=seen.end()) return (long long)0;
             seen.insert(make_pair(i,j));
             long long sum=grid[i][j];
             for(int d=0;d<4;d++){
