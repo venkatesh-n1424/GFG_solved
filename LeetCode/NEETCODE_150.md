@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 55 / 150 (36.7%)
+- **Completed:** 56 / 150 (37.3%)
 
 ---
 
@@ -106,7 +106,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Word Search](./C++/Medium/79. Word Search/)
 - [x] [Palindrome Partitioning](./C++/Medium/131. Palindrome Partitioning/)
 - [x] [Letter Combinations of a Phone Number](./C++/Medium/17. Letter Combinations of a Phone Number/)
-- [ ] N-Queens
+- [x] [N-Queens](./C++/Hard/51. N-Queens/)
 
 ### 📂 Graphs
 - [ ] Number of Islands
