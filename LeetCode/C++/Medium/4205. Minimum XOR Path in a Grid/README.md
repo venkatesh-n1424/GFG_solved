@@ -8,8 +8,8 @@
 Array, Dynamic Programming, Bit Manipulation, Matrix
 
 ### 🚀 Performance
-- **Runtime:** 2993 ms
-- **Memory:** 520.3 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
