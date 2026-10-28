@@ -13,7 +13,7 @@ public:
                     for(auto& it:dp[i][j-1]){
                         cs.insert(it^cur);
                     }
-                    dp[i][j]=cs;
+    
                 }
                 else if(j==0){
                     for(auto& it:dp[i-1][j]){
