@@ -114,7 +114,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Max Area of Island
 - [ ] Pacific Atlantic Water Flow
 - [ ] Surrounded Regions
-- [x] [Rotting Oranges](./C++/Medium/994. Rotting Oranges/)
+- [x] [Rotting Oranges](./C++/Medium/1036. Rotting Oranges/)
 - [ ] Walls and Gates
 - [ ] Course Schedule
 - [ ] Course Schedule II
