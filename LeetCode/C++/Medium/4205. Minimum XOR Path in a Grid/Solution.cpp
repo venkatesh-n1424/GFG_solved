@@ -10,20 +10,20 @@ public:
                 int cur=grid[i][j];
                 unordered_set<int> cs=dp[i][j];
                 if(i==0){
-                    for(auto& it:dp[i][j-1]){
+                    for(int it:dp[i][j-1]){
                         cs.insert(it^cur);
                     }
                 }
                 else if(j==0){
-                    for(auto& it:dp[i-1][j]){
+                    for(int it:dp[i-1][j]){
                         cs.insert(it^cur);
                     }
                 }
                 else {
-                    for(auto& it:dp[i][j-1]){
+                    for(int it:dp[i][j-1]){
                         cs.insert(it^cur);
                     }
-                    for(auto& it:dp[i-1][j]){
+                    for(int it:dp[i-1][j]){
                         cs.insert(it^cur);
                     }
                 }
