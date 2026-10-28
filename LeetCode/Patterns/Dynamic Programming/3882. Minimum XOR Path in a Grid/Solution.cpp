@@ -10,7 +10,7 @@ public:
                 int cur=grid[i][j];
                 unordered_set<int> cs=dp[i][j];
                 if(i==0){
-                    for(auto& it:dp[i][j-1]){
+                    for(ait:dp[i][j-1]){
                         cs.insert(it^cur);
                     }
                 }
