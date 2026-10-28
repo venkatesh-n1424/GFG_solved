@@ -2,6 +2,7 @@ class Solution {
 public:
     int minCost(vector<vector<int>>& grid) {
         int m=grid.size(),n=grid[0].size();
+        vec
         function<int(int,int,int)> solve=[&](int i,int j,int x){
             if(i==m-1 && j==n-1) return grid[i][j]^x;
             int op1=INT_MAX,op2=INT_MAX;
