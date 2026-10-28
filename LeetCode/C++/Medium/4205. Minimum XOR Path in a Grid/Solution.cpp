@@ -1,37 +1,41 @@
 class Solution {
 public:
     int minCost(vector<vector<int>>& grid) {
-        int m=grid.size(),n=grid[0].size();
-        vector<vector<set<int>>> dp(m,vector<set<int>>(n));
+        int n = grid.size();
+        int m = grid[0].size();
+        
+        vector<vector<unordered_set<int>>> dp(n, vector<unordered_set<int>>(m));
+        
         dp[0][0].insert(grid[0][0]);
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(i==0 && j==0) continue;
-                int cur=grid[i][j];
-                set<int> cs=dp[i][j];
-                if(i==0){
-                    for(int it:dp[i][j-1]){
-                        cs.insert(it^cur);
+        
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < m; ++j) {
+                if (i == 0 && j == 0) continue;
+                
+                int curr = grid[i][j];
+                unordered_set<int> cs;
+                
+                if (i == 0) {
+                    for (int prev : dp[i][j - 1]) {
+                        cs.insert(prev ^ curr);
+                    }
+                } else if (j == 0) {
+                    for (int prev : dp[i - 1][j]) {
+                        cs.insert(prev ^ curr);
+                    }
+                } else {
+                    for (int prev : dp[i][j - 1]) {
+                        cs.insert(prev ^ curr);
+                    }
+                    for (int prev : dp[i - 1][j]) {
+                        cs.insert(prev ^ curr);
                     }
                 }
-                else if(j==0){
-                    for(int it:dp[i-1][j]){
-                        cs.insert(it^cur);
-                    }
-                }
-                else {
-                    for(int it:dp[i][j-1]){
-                        cs.insert(it^cur);
-                    }
-                    for(int it:dp[i-1][j]){
-                        cs.insert(it^cur);
-                    }
-                }
-                dp[i][j]=move(cs);
+                
+                dp[i][j] = move(cs);
             }
         }
-        // int min_xor=INT_MAX;
-        // for(auto& it:dp[m-1][n-1]) min_xor=min(min_xor,it);
-        return *dp[m-1][n-1].begin();
+        
+        return *min_element(dp[n - 1][m - 1].begin(), dp[n - 1][m - 1].end());
     }
 };
