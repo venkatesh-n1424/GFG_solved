@@ -8,7 +8,7 @@
 Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Graph Coloring, Bipartite Graph
 
 ### 🚀 Performance
-- **Runtime:** 20 ms
+- **Runtime:** 1 ms
 - **Memory:** 17.7 MB
 
 ---
