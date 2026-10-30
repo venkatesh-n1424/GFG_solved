@@ -1,6 +1,6 @@
 # 📝 3970. Shortest Path With At Most K Consecutive Identical Characters (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/?envType=daily-question&envId=2026-10-30)
+🔗 [Problem Link](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
