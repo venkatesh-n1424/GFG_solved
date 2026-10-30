@@ -7,7 +7,7 @@ public:
         }
         vector<vector<int>> dist(n,vector<int>(k+1,INT_MAX));
         dist[0][1]=0;
-        queue<vector<int>> q;
+        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq;
         q.push({0,0,1});//w,node,streak
         while(!q.empty()){
             vector<int> t=q.front();
