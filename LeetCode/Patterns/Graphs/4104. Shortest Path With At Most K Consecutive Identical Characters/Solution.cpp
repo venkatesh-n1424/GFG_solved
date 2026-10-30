@@ -7,10 +7,10 @@ public:
         }
         vector<vector<int>> dist(n,vector<int>(k+1,INT_MAX));
         dist[0][1]=0;
-        queue<vector<int>> q;
+        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> q;
         q.push({0,0,1});//w,node,streak
         while(!q.empty()){
-            vector<int> t=q.front();
+            vector<int> t=q.top();
             q.pop();
             if(t[0]>dist[t[1]][t[2]]) continue;
             if(t[1]==n-1) return t[0];
