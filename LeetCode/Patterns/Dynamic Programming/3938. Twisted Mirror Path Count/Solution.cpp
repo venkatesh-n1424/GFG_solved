@@ -1,9 +1,12 @@
 class Solution {
 public:
     int uniquePaths(vector<vector<int>>& grid) {
+        //Tc-O(mn) Sc-O(mn)
         int mod=1e9+7;
         int m=grid.size(),n=grid[0].size();
         vector<vector<pair<int,int>>> dp(m,vector<pair<int,int>>(n,{0,0}));
+        //dp[i][j].first=from left
+        //dp[i][j].second=from top
         for(int i=1;i<m;i++){
             dp[i][0]={0,1};
             if(grid[i][0]==1) break;
