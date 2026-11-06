@@ -21,7 +21,7 @@ public:
                 mpp[s]++;
                 r++;
             }
-            while(l<r && logs[l][1]<iq[1]-x){
+            while(l<r && logs[l][1]+x<iq[1]){
                 int s=logs[l][0];
                 mpp[s]--;
                 if(mpp[s]==0) mpp.erase(s);
