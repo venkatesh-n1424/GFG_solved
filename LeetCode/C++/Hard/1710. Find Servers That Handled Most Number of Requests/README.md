@@ -8,8 +8,8 @@
 Array, Heap (Priority Queue), Simulation, Ordered Set
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 157 ms
+- **Memory:** 123 MB
 
 ---
 
