@@ -1,5 +1,6 @@
 class Solution {
 public:
+    
     int solve(int i,vector<int>& costs,int cost,int n){
         if(i==n) {
             return cost;

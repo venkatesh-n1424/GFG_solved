@@ -1,6 +1,6 @@
 # 📝 3693. Climbing Stairs II (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/climbing-stairs-ii)
+🔗 [Problem Link](https://leetcode.com/problems/climbing-stairs-ii/?envType=daily-question&envId=2026-11-10)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
