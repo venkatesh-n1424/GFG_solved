@@ -19,19 +19,37 @@ public:
         // }
         // return count % M;
         //better Tc-O(n2)
+        // int n = arr.size();
+        // int count = 0;
+        
+        // for (int i = 0; i < n; i++) {
+        //     int sum = 0;
+        //     for (int j = i; j < n; j++) {
+        //         sum += arr[j];
+        //         if (sum % 2 != 0) {
+        //             count = (count+1)%M;
+        //         }
+        //     }
+        // }
+        // return count % M;
         int n = arr.size();
         int count = 0;
-        
-        for (int i = 0; i < n; i++) {
-            int sum = 0;
-            for (int j = i; j < n; j++) {
-                sum += arr[j];
-                if (sum % 2 != 0) {
-                    count = (count+1)%M;
-                }
+        int odd = 0;
+        int even = 1;
+        int sum = 0;
+
+        for(int i = 0; i < n; i++) {
+            sum += arr[i];
+
+            if(sum%2 == 0) {            //odd + even = odd
+                count = (count + odd) % M;
+                even++;
+            } else {                    //even + odd = odd
+                count = (count + even) % M;
+                odd++;
             }
         }
-        
-        return count % M;
+
+        return count;
     }
 };
