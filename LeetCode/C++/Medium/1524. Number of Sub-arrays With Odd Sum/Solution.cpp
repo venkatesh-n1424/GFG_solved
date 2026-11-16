@@ -2,6 +2,7 @@ class Solution {
 public:
     const int M=1e9+7;
     int numOfSubarrays(vector<int>& arr) {
+        //Tc-O(n3)
         int n = arr.size();
         int count = 0;
         
