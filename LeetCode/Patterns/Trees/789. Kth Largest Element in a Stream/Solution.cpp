@@ -1,7 +1,7 @@
 class KthLargest {
 public:
-    int k;
     vector<int> nums;
+    int k;
     KthLargest(int k, vector<int>& nums) {
         this->k=k;
         this->nums=nums;
@@ -12,11 +12,8 @@ public:
         for(int& i: nums) pq.push(i);
         nums.emplace_back(val);
         pq.push(val);
-        int cnt=k;
-        while(cnt>1){
-            pq.pop();
-            cnt--;
-        }
+        int cnt=k-1;
+        while(cnt--) pq.pop();
         return pq.top();
     }
 };
