@@ -1,6 +1,6 @@
 # 📝 703. Kth Largest Element in a Stream (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
+🔗 [Problem Link](https://leetcode.com/problems/kth-largest-element-in-a-stream)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 

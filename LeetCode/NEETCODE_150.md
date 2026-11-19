@@ -89,7 +89,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Word Search II
 
 ### 📂 Heap / Priority Queue
-- [x] [Kth Largest Element in a Stream](./C++/Easy/789. Kth Largest Element in a Stream/)
+- [x] [Kth Largest Element in a Stream](./C++/Easy/703. Kth Largest Element in a Stream/)
 - [x] [Last Stone Weight](./C++/Easy/1127. Last Stone Weight/)
 - [ ] K Closest Points to Origin
 - [ ] Kth Largest Element in an Array
