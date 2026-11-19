@@ -90,7 +90,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 
 ### 📂 Heap / Priority Queue
 - [ ] Kth Largest Element in a Stream
-- [x] [Last Stone Weight](./C++/Easy/1046. Last Stone Weight/)
+- [x] [Last Stone Weight](./C++/Easy/1127. Last Stone Weight/)
 - [ ] K Closest Points to Origin
 - [ ] Kth Largest Element in an Array
 - [ ] Task Scheduler
