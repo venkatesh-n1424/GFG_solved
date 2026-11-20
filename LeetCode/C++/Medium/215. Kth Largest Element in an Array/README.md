@@ -1,6 +1,6 @@
 # 📝 215. Kth Largest Element in an Array (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/kth-largest-element-in-an-array)
+🔗 [Problem Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -21,7 +21,7 @@ Note that it is the  `kth`  largest element in the sorted order, not the  `kth` 
 
 Can you solve it without sorting?
 
-OriginalC++ **Example 1:**
+**Example 1:**
 
 ```
 Input: nums = [3,2,1,5,6,4], k = 2
