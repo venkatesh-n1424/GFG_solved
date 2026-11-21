@@ -8,8 +8,8 @@
 Array, Hash Table, String, Tree, Depth-First Search
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 1257 ms
+- **Memory:** 297.1 MB
 
 ---
 
